@@ -1,0 +1,16 @@
+<h1>Counted</h1>
+<a href="{% url 'home' %}">goback to home</a>
+
+<h2>Your texts: </h2><br><br>
+{{ text }}
+<br>
+<h2>word count: </h2>
+<br>
+Toatal words are : {{ llength }}
+<br>
+<h2>Word frequency : </h2>
+<br>
+{% for word,count in dic %}
+{{ word }} = {{ count }}
+<br>
+{% endfor %}
